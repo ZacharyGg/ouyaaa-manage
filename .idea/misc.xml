@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/ouyaaa-common/pom.xml" />
+        <option value="$PROJECT_DIR$/ouyaaa-auth/pom.xml" />
+        <option value="$PROJECT_DIR$/ouyaaa-server/pom.xml" />
+        <option value="$PROJECT_DIR$/ouyaaa-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/ouyaaa-config/pom.xml" />
+        <option value="$PROJECT_DIR$/ouyaaa-upms/pom.xml" />
+        <option value="$PROJECT_DIR$/ouyaaa-common/ouyaaa-commnon-log/pom.xml" />
+        <option value="$PROJECT_DIR$/ouyaaa-codegen/pom.xml" />
+        <option value="$PROJECT_DIR$/ouyaaa-manage-biz/pom.xml" />
+        <option value="$PROJECT_DIR$/ouyaaa-manage-biz/ouyaaa-manage-equipment/pom.xml" />
+        <option value="$PROJECT_DIR$/ouyaaa-manage-biz/ouyaaa-manage-quality/pom.xml" />
+        <option value="$PROJECT_DIR$/ouyaaa-manage-biz/ouyaaa-manage-material/pom.xml" />
+        <option value="$PROJECT_DIR$/ouyaaa-manage-biz/ouyaaa-manage-produce/pom.xml" />
+        <option value="$PROJECT_DIR$/ouyaaa-manage-biz/ouyaaa-manage-basis/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/ouyaaa-codegeneration/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

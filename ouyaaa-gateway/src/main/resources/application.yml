@@ -1,0 +1,32 @@
+server:
+  port: 9005
+eureka:
+  client:
+    service-url:
+      defaultZone: http://edmin:edmin@eurekaserver.com:9001/eureka
+  instance:
+    instance-id: authserver.com
+    prefer-ip-address: true
+spring:
+  application:
+    name: ouyaaa-gateway
+  session:
+    store-type: none
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true  #可以通过注册中心直接访问，下面可以不配置，但是访问地址要以服务ID
+      routes:
+      - id: OUYAAA-UPMS
+        uri: lb://OUYAAA-UPMS
+        predicates:
+        - Path= /upms/**
+        filters:
+        - StripPrefix=1    #去除前缀
+
+logging:
+  level:
+    org.springframework.cloud.gateway: debug
+
+

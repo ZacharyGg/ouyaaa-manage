@@ -1,0 +1,23 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: eureka-server
+  security:
+    user:
+      name: edmin
+      password: edmin
+eureka:
+  instance:
+    instance-id: eurekaserver.com
+    hostname: eurekaserver.com
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: false
+    service-url:
+      defaultZone: http://edmin:edmin@${eureka.instance.hostname}:${server.port}/eureka/
+  server:
+    eviction-interval-timer-in-ms: 4000
+    enable-self-preservation: false
+    renewal-percent-threshold: 0.9

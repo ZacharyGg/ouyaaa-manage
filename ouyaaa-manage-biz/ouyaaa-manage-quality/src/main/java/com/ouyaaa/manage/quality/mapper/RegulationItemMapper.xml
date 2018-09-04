@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ouyaaa.manage.quality.mapper.RegulationItemMapper">
+
+    <!-- 开启二级缓存 -->
+    <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ouyaaa.manage.quality.entity.RegulationItem">
+        <id column="regu_id" property="reguId" />
+        <result column="regu_type" property="reguType" />
+        <result column="regu_code" property="reguCode" />
+        <result column="regu_name" property="reguName" />
+        <result column="regu_cycle" property="reguCycle" />
+        <result column="cycle_unit" property="cycleUnit" />
+        <result column="regu_version" property="reguVersion" />
+        <result column="status_code" property="statusCode" />
+        <result column="machine_code" property="machineCode" />
+        <result column="machine_type" property="machineType" />
+        <result column="update_by" property="updateBy" />
+        <result column="update_time" property="updateTime" />
+        <result column="create_time" property="createTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        regu_id, regu_type, regu_code, regu_name, regu_cycle, cycle_unit, regu_version, status_code, machine_code, machine_type, update_by, update_time, create_time
+    </sql>
+
+</mapper>

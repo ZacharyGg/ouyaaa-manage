@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ouyaaa-auth" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ouyaaa-codegen" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ouyaaa-codegeneration" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ouyaaa-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ouyaaa-common/ouyaaa-commnon-log" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ouyaaa-common/ouyaaa-common-upms" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ouyaaa-config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ouyaaa-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ouyaaa-manage-biz" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ouyaaa-manage-biz/ouyaaa-manage-basis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ouyaaa-manage-biz/ouyaaa-manage-equipment" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ouyaaa-manage-biz/ouyaaa-manage-equipment" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ouyaaa-manage-biz/ouyaaa-manage-material" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ouyaaa-manage-biz/ouyaaa-manage-produce" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ouyaaa-manage-biz/ouyaaa-manage-quality" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ouyaaa-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ouyaaa-upms" charset="UTF-8" />
+  </component>
+</project>

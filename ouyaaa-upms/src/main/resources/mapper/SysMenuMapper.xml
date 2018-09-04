@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ouyaaa.upms.mapper.SysMenuMapper">
+    <resultMap id="BaseResultMap" type="com.ouyaaa.common.upms.entity.SysMenu">
+        <id column="menu_id" property="menuId" />
+        <result column="menu_name" property="menuName"/>
+        <result column="menu_type" property="menuType"/>
+        <result column="menu_desc" property="menuDesc"/>
+        <result column="parent_id" property="parentId"/>
+        <result column="menu_permission" property="menuPermission"/>
+        <result column="menu_icon" property="menuIcon"/>
+        <result column="menu_sort" property="menuSort"/>
+        <result column="menu_component" property="menuComponent"/>
+        <result column="menu_path" property="menuPath"/>
+        <result column="del_flag" property="delFlag"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+    </resultMap>
+
+    <!--通过角色ID查询菜单-->
+    <select id="selectListByRoleId" resultMap="BaseResultMap">
+        SELECT
+          t1.*
+        FROM
+          sys_menu t1
+        JOIN
+          sys_role_menu t2
+        ON
+          t1.menu_id = t2.menu_id
+        WHERE
+          t1.del_flag = 0
+          AND
+          t2.role_id = #{roleId}
+    </select>
+
+    <!--通过角色编码查询菜单-->
+    <select id="selectListByRoleCode" resultMap="BaseResultMap">
+        SELECT
+        t3.*
+        FROM
+        sys_role t1
+        LEFT JOIN
+        sys_role_menu t2 ON t1.role_id = t2.role_id
+        LEFT JOIN sys_menu t3 ON t2.menu_id = t3.menu_id
+        WHERE
+        t1.del_flag = 0
+        AND
+        t3.del_flag = 0
+        AND
+        t1.role_code = #{roleCode}
+        ORDER BY t3.menu_sort DESC
+    </select>
+</mapper>

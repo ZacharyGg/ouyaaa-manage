@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/com.ouyaaa.iml" filepath="$PROJECT_DIR$/com.ouyaaa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ouyaaa-auth/ouyaaa-auth.iml" filepath="$PROJECT_DIR$/ouyaaa-auth/ouyaaa-auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ouyaaa-codegen/ouyaaa-codegen.iml" filepath="$PROJECT_DIR$/ouyaaa-codegen/ouyaaa-codegen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ouyaaa-common/ouyaaa-commnon-log/ouyaaa-commnon-log.iml" filepath="$PROJECT_DIR$/ouyaaa-common/ouyaaa-commnon-log/ouyaaa-commnon-log.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ouyaaa-common/ouyaaa-common.iml" filepath="$PROJECT_DIR$/ouyaaa-common/ouyaaa-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ouyaaa-common/ouyaaa-common-upms/ouyaaa-common-upms.iml" filepath="$PROJECT_DIR$/ouyaaa-common/ouyaaa-common-upms/ouyaaa-common-upms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ouyaaa-config/ouyaaa-config.iml" filepath="$PROJECT_DIR$/ouyaaa-config/ouyaaa-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ouyaaa-gateway/ouyaaa-gateway.iml" filepath="$PROJECT_DIR$/ouyaaa-gateway/ouyaaa-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ouyaaa-manage-biz/ouyaaa-manage-basis/ouyaaa-manage-basis.iml" filepath="$PROJECT_DIR$/ouyaaa-manage-biz/ouyaaa-manage-basis/ouyaaa-manage-basis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ouyaaa-manage-biz/ouyaaa-manage-biz.iml" filepath="$PROJECT_DIR$/ouyaaa-manage-biz/ouyaaa-manage-biz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ouyaaa-manage-biz/ouyaaa-manage-equipment/ouyaaa-manage-equipment.iml" filepath="$PROJECT_DIR$/ouyaaa-manage-biz/ouyaaa-manage-equipment/ouyaaa-manage-equipment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ouyaaa-manage-biz/ouyaaa-manage-material/ouyaaa-manage-material.iml" filepath="$PROJECT_DIR$/ouyaaa-manage-biz/ouyaaa-manage-material/ouyaaa-manage-material.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ouyaaa-manage-biz/ouyaaa-manage-produce/ouyaaa-manage-produce.iml" filepath="$PROJECT_DIR$/ouyaaa-manage-biz/ouyaaa-manage-produce/ouyaaa-manage-produce.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ouyaaa-manage-biz/ouyaaa-manage-quality/ouyaaa-manage-quality.iml" filepath="$PROJECT_DIR$/ouyaaa-manage-biz/ouyaaa-manage-quality/ouyaaa-manage-quality.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ouyaaa-server/ouyaaa-server.iml" filepath="$PROJECT_DIR$/ouyaaa-server/ouyaaa-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ouyaaa-upms/ouyaaa-upms.iml" filepath="$PROJECT_DIR$/ouyaaa-upms/ouyaaa-upms.iml" />
+    </modules>
+  </component>
+</project>

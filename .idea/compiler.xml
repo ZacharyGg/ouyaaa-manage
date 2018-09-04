@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ouyaaa-auth" />
+        <module name="ouyaaa-codegen" />
+        <module name="ouyaaa-commnon-log" />
+        <module name="ouyaaa-common-upms" />
+        <module name="ouyaaa-config" />
+        <module name="ouyaaa-gateway" />
+        <module name="ouyaaa-manage-basis" />
+        <module name="ouyaaa-manage-equipment" />
+        <module name="ouyaaa-manage-material" />
+        <module name="ouyaaa-manage-produce" />
+        <module name="ouyaaa-manage-quality" />
+        <module name="ouyaaa-server" />
+        <module name="ouyaaa-upms" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="com.ouyaaa" target="1.8" />
+      <module name="common" target="1.8" />
+      <module name="ouyaaa-auth" target="1.8" />
+      <module name="ouyaaa-codegen" target="1.8" />
+      <module name="ouyaaa-codegeneration" target="1.7" />
+      <module name="ouyaaa-commnon-log" target="1.8" />
+      <module name="ouyaaa-common" target="1.8" />
+      <module name="ouyaaa-common-log" target="1.8" />
+      <module name="ouyaaa-common-upms" target="1.7" />
+      <module name="ouyaaa-config" target="1.8" />
+      <module name="ouyaaa-gateway" target="1.8" />
+      <module name="ouyaaa-manage-basis" target="1.8" />
+      <module name="ouyaaa-manage-biz" target="1.8" />
+      <module name="ouyaaa-manage-equipment" target="1.8" />
+      <module name="ouyaaa-manage-material" target="1.8" />
+      <module name="ouyaaa-manage-produce" target="1.8" />
+      <module name="ouyaaa-manage-quality" target="1.8" />
+      <module name="ouyaaa-server" target="1.8" />
+      <module name="ouyaaa-upms" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

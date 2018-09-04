@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ouyaaa.manage.equipment.mapper.FailureRegisterMapper">
+
+    <!-- 开启二级缓存 -->
+    <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ouyaaa.manage.equipment.entity.FailureRegister">
+        <id column="failure_id" property="failureId" />
+        <result column="failure_code" property="failureCode" />
+        <result column="failurer_name" property="failurerName" />
+        <result column="start_time" property="startTime" />
+        <result column="end_time" property="endTime" />
+        <result column="duration_time" property="durationTime" />
+        <result column="workorder_num" property="workorderNum" />
+        <result column="machine_code" property="machineCode" />
+        <result column="shift_code" property="shiftCode" />
+        <result column="team_code" property="teamCode" />
+        <result column="producer" property="producer" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        failure_id, failure_code, failurer_name, start_time, end_time, duration_time, workorder_num, machine_code, shift_code, team_code, producer
+    </sql>
+
+</mapper>

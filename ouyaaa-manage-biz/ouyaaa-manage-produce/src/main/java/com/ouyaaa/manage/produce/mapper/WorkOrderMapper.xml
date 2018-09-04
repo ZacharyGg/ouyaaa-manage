@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ouyaaa.manage.produce.mapper.WorkOrderMapper">
+
+    <!-- 开启二级缓存 -->
+    <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ouyaaa.manage.produce.entity.WorkOrder">
+        <id column="order_id" property="orderId" />
+        <result column="order_code" property="orderCode" />
+        <result column="plan_date" property="planDate" />
+        <result column="start_time" property="startTime" />
+        <result column="end_time" property="endTime" />
+        <result column="produce_shift" property="produceShift" />
+        <result column="produce_team" property="produceTeam" />
+        <result column="produce_brand" property="produceBrand" />
+        <result column="produce_value" property="produceValue" />
+        <result column="unit_code" property="unitCode" />
+        <result column="produce_storage" property="produceStorage" />
+        <result column="produce_machine" property="produceMachine" />
+        <result column="up_machine" property="upMachine" />
+        <result column="down_machine" property="downMachine" />
+        <result column="order_sort" property="orderSort" />
+        <result column="oeder_status" property="oederStatus" />
+        <result column="create_by" property="createBy" />
+        <result column="create_time" property="createTime" />
+        <result column="update_by" property="updateBy" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        order_id, order_code, plan_date, start_time, end_time, produce_shift, produce_team, produce_brand, produce_value, unit_code, produce_storage, produce_machine, up_machine, down_machine, order_sort, oeder_status, create_by, create_time, update_by, update_time
+    </sql>
+
+</mapper>

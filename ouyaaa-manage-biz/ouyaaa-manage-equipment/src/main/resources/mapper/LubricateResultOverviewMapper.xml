@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ouyaaa.manage.equipment.mapper.LubricateResultOverviewMapper">
+
+    <!-- 开启二级缓存 -->
+    <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ouyaaa.manage.equipment.entity.LubricateResultOverview">
+        <id column="overview_id" property="overviewId" />
+        <result column="lubricate_code" property="lubricateCode" />
+        <result column="regu_code" property="reguCode" />
+        <result column="machine_code" property="machineCode" />
+        <result column="work_code" property="workCode" />
+        <result column="lubricate_date" property="lubricateDate" />
+        <result column="lubricate_team" property="lubricateTeam" />
+        <result column="lubricate_shift" property="lubricateShift" />
+        <result column="lubricate_by" property="lubricateBy" />
+        <result column="lubricate_time" property="lubricateTime" />
+        <result column="qualified_count" property="qualifiedCount" />
+        <result column="unqualified_count" property="unqualifiedCount" />
+        <result column="status_code" property="statusCode" />
+        <result column="update_by" property="updateBy" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        overview_id, lubricate_code, regu_code, machine_code, work_code, lubricate_date, lubricate_team, lubricate_shift, lubricate_by, lubricate_time, qualified_count, unqualified_count, status_code, update_by, update_time
+    </sql>
+
+</mapper>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ouyaaa.manage.equipment.mapper.CheckpointItemMapper">
+
+    <!-- 开启二级缓存 -->
+    <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ouyaaa.manage.equipment.entity.CheckpointItem">
+        <id column="item_id" property="itemId" />
+        <result column="item_code" property="itemCode" />
+        <result column="item_name" property="itemName" />
+        <result column="item_part" property="itemPart" />
+        <result column="item_content" property="itemContent" />
+        <result column="item_standart" property="itemStandart" />
+        <result column="item_cycle" property="itemCycle" />
+        <result column="cycle_unit" property="cycleUnit" />
+        <result column="regu_code" property="reguCode" />
+        <result column="x_axis" property="xAxis" />
+        <result column="y_axis" property="yAxis" />
+        <result column="z_axis" property="zAxis" />
+        <result column="d_code" property="dCode" />
+        <result column="status_code" property="statusCode" />
+        <result column="update_by" property="updateBy" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        item_id, item_code, item_name, item_part, item_content, item_standart, item_cycle, cycle_unit, regu_code, x_axis, y_axis, z_axis, d_code, status_code, update_by, update_time
+    </sql>
+
+</mapper>
