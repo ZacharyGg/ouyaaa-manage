@@ -22,6 +22,9 @@ import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
  * @Description：
  **/
 
+/**
+ * 根据数据库生产代码，若要定制需要写配置
+ */
 public class MPConfig {
 
     public MPConfig(){
