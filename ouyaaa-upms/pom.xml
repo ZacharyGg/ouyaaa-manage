@@ -57,6 +57,13 @@
             <artifactId>aspectjweaver</artifactId>
         </dependency>
 
+        <!--bus 里面包含了rabbitMQ引用-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+        </dependency>
+
+
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
@@ -74,5 +81,26 @@
             <artifactId>ouyaaa-common-upms</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>com.ouyaaa</groupId>
+            <artifactId>ouyaaa-manage-basis</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <!--feign 依赖-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-okhttp</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.ouyaaa</groupId>
+            <artifactId>ouyaaa-common-transaction</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
     </dependencies>
 </project>

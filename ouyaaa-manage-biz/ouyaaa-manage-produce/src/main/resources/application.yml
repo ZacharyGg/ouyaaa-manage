@@ -1,8 +1,8 @@
 server:
-  port: 7002
+  port: 7006
 spring:
   application:
-    name: ouyaaa-upms
+    name: ouyaaa-produce
   session:
     store-type: none
   datasource:
@@ -11,20 +11,45 @@ spring:
       url: jdbc:mysql://127.0.0.1:3306/upms?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
       username: root
       password: 123456
+  cloud:
+    stream:
+      binders: #配置要绑定的rabbitmq的服务信息；
+        defaultRabbit: # 表示定义的名称，用于于binding整合
+          type: rabbit # 消息组件类型
+          environment: # 设置rabbitmq的相关的环境配置
+            spring:
+              rabbitmq:
+                host: 127.0.0.1
+                port: 5672
+                username: hlxd
+                password: hlxd
+                virtual-host: /
+      bindings:   # 服务的整合处理
+        input:  # 通道的名称
+          destination: StreamExchange   # 表示要使用的Exchange名称定义
+          content-type: application/json   # 设置消息类型，本次为对象json，如果是文本则设置“text/plain”
+          binder: defaultRabbit    # 设置要绑定的消息服务的具体设置
+          group: Stream-group # 进行操作的分组，实际上就表示持久化
+  rabbitmq:   #这里把Stream依赖的mq和通常使用的分开
+    host: rabbitmq.com
+    port: 5672
+    username: hlxd
+    password: hlxd
+    virtual-host: /
+
 eureka:
   client:
     service-url:
       defaultZone: http://edmin:edmin@127.0.0.1:9001/eureka/
   instance:
-    instance-id: ouyaaupms.com
+    instance-id: ouyaaaproduce.com
     prefer-ip-address: true
-
 
 #mybatis
 mybatis-plus:
   mapper-locations: classpath:/mapper/*Mapper.xml
   #实体扫描，多个package用逗号或者分号分隔
-  typeAliasesPackage: package com.ouyaaa.common.upms.entity;
+  typeAliasesPackage: package com.ouyaaa.manage.basis.entity;
   #typeEnumsPackage: com.baomidou.springboot.entity.enums
   global-config:
     #主键类型  0:"数据库ID自增", 1:"用户输入ID",2:"全局唯一ID (数字类型唯一ID)", 3:"全局唯一ID UUID";

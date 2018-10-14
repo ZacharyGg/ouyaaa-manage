@@ -27,6 +27,7 @@ import org.springframework.security.oauth2.provider.token.store.redis.RedisToken
 
 @Configuration
 public class TokenStoreConfig {
+
     @Autowired
     private RedisConnectionFactory redisConnectionFactory;
     /**

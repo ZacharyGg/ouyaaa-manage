@@ -10,6 +10,7 @@
         <module name="ouyaaa-auth" />
         <module name="ouyaaa-codegen" />
         <module name="ouyaaa-commnon-log" />
+        <module name="ouyaaa-common-transaction" />
         <module name="ouyaaa-common-upms" />
         <module name="ouyaaa-config" />
         <module name="ouyaaa-gateway" />
@@ -31,6 +32,7 @@
       <module name="ouyaaa-commnon-log" target="1.8" />
       <module name="ouyaaa-common" target="1.8" />
       <module name="ouyaaa-common-log" target="1.8" />
+      <module name="ouyaaa-common-transaction" target="1.8" />
       <module name="ouyaaa-common-upms" target="1.7" />
       <module name="ouyaaa-config" target="1.8" />
       <module name="ouyaaa-gateway" target="1.8" />

@@ -11,6 +11,43 @@ spring:
       url: jdbc:mysql://127.0.0.1:3306/upms?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
       username: root
       password: 123456
+  cloud:
+    stream:
+      binders: #配置要绑定的rabbitmq的服务信息；
+        defaultRabbit: # 表示定义的名称，用于于binding整合
+          type: rabbit # 消息组件类型
+          environment: # 设置rabbitmq的相关的环境配置
+            spring:
+              rabbitmq:
+                host: rabbitmq.com
+                port: 5672
+                username: hlxd
+                password: hlxd
+                virtual-host: /
+      bindings:   # 服务的整合处理
+        output:  # 通道的名称
+          destination:  StreamExchange   # 表示要使用的Exchange名称定义
+          content-type: application/json   # 设置消息类型，本次为对象json，如果是文本则设置“text/plain”
+          binder: defaultRabbit
+
+  rabbitmq:   #这里把Stream依赖的mq和通常使用的分开
+    host: rabbitmq.com
+    port: 5672
+    username: hlxd
+    password: hlxd
+    virtual-host: /
+    cache:
+      channel:
+        size: 100
+    publisher-returns: true
+    listener:
+      simple:
+        acknowledge-mode: manual
+        concurrency: 5
+        max-concurrency: 20
+        retry:
+          enabled: true
+
 eureka:
   client:
     service-url:
@@ -18,7 +55,6 @@ eureka:
   instance:
     instance-id: ouyaaupms.com
     prefer-ip-address: true
-
 
 #mybatis
 mybatis-plus:

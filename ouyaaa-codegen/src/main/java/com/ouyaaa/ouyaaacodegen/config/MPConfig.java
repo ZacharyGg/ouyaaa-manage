@@ -23,7 +23,7 @@ import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
  **/
 
 /**
- * 根据数据库生产代码，若要定制需要写配置
+ * 根据数据库生产代码，若要定制需要写配置，分支测试
  */
 public class MPConfig {
 
@@ -51,7 +51,7 @@ public class MPConfig {
         GlobalConfig globalConfig = new GlobalConfig();
         globalConfig.setActiveRecord(true)  //是否支ar模式
                     .setAuthor("Zachary")
-                    .setOutputDir("D:\\SoftProject\\IntelliJProject\\com.ouyaaa\\ouyaaa-manage-biz\\ouyaaa-manage-produce\\src\\main\\java") //生成路径
+                    .setOutputDir("D:\\") //生成路径
                     .setFileOverride(true) //文件覆盖
                     .setIdType(IdType.AUTO)
                     .setServiceName("%sService") //设置生成的Service接口名称的首字母是否为I；
@@ -67,7 +67,7 @@ public class MPConfig {
         DataSourceConfig sourceConfig = new DataSourceConfig();
         sourceConfig.setDbType(DbType.MYSQL)
                     .setDriverName("com.mysql.jdbc.Driver")
-                    .setUrl("jdbc:mysql://127.0.0.1:3306/upms?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false")
+                    .setUrl("jdbc:mysql://127.0.0.1:3306/hlhmidb?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false")
                     .setUsername("root")
                     .setPassword("123456");
         return sourceConfig;
@@ -85,11 +85,8 @@ public class MPConfig {
                 .setEntityLombokModel(true)
                 .setRestControllerStyle(true)
                 .setVersionFieldName("1.0")
-                .setTablePrefix("product_")
-                      .setInclude("product_calendar",
-                              "product_order_status",
-                              "product_personnel",
-                              "product_work_order"
+                .setTablePrefix("hl_")
+                      .setInclude("hl_save_hourdata"
                               );
         return strategyConfig;
     }
@@ -99,7 +96,7 @@ public class MPConfig {
      */
     public PackageConfig setPackageConfig(){
         PackageConfig packageConfig = new PackageConfig();
-        packageConfig.setParent("com.ouyaaa.manage.produce")
+        packageConfig.setParent("com.ouyaaa.site.terminal")
                         .setMapper("mapper")
                         .setController("rest")
                         .setService("service")

@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/ouyaaa-codegen/ouyaaa-codegen.iml" filepath="$PROJECT_DIR$/ouyaaa-codegen/ouyaaa-codegen.iml" />
       <module fileurl="file://$PROJECT_DIR$/ouyaaa-common/ouyaaa-commnon-log/ouyaaa-commnon-log.iml" filepath="$PROJECT_DIR$/ouyaaa-common/ouyaaa-commnon-log/ouyaaa-commnon-log.iml" />
       <module fileurl="file://$PROJECT_DIR$/ouyaaa-common/ouyaaa-common.iml" filepath="$PROJECT_DIR$/ouyaaa-common/ouyaaa-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ouyaaa-common/ouyaaa-common-transaction/ouyaaa-common-transaction.iml" filepath="$PROJECT_DIR$/ouyaaa-common/ouyaaa-common-transaction/ouyaaa-common-transaction.iml" />
       <module fileurl="file://$PROJECT_DIR$/ouyaaa-common/ouyaaa-common-upms/ouyaaa-common-upms.iml" filepath="$PROJECT_DIR$/ouyaaa-common/ouyaaa-common-upms/ouyaaa-common-upms.iml" />
       <module fileurl="file://$PROJECT_DIR$/ouyaaa-config/ouyaaa-config.iml" filepath="$PROJECT_DIR$/ouyaaa-config/ouyaaa-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/ouyaaa-gateway/ouyaaa-gateway.iml" filepath="$PROJECT_DIR$/ouyaaa-gateway/ouyaaa-gateway.iml" />

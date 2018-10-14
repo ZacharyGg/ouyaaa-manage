@@ -40,7 +40,7 @@ public class UserInfoRestController {
      * @return
      */
     @ApiOperation(value="用户信息", notes = "用户信息")
-    @SysLog("查询用户信息")
+    //@SysLog("查询用户信息")
     @RequestMapping(value = "/info/{username}", method = RequestMethod.GET)
     public UserInfo getUserInfo(@PathVariable String username){
 

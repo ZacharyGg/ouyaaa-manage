@@ -43,7 +43,7 @@ public class SwaggerConfig {
                 //服务条款网址
                 //.termsOfServiceUrl("http://blog.csdn.net/forezp")
                 .version("1.0")
-                //.contact(new Contact("帅呆了", "url", "email"))
+                //.contact(new Contact("111", "url", "email"))
                 .build();
     }
 }

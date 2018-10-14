@@ -8,6 +8,7 @@ import com.ouyaaa.upms.core.constant.CommConstant;
 import com.ouyaaa.common.upms.dto.DeptTree;
 import com.ouyaaa.common.upms.entity.SysDept;
 import com.ouyaaa.upms.service.SysDeptService;
+import io.swagger.annotations.Authorization;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

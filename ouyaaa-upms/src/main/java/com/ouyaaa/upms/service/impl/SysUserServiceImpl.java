@@ -8,20 +8,20 @@ import cn.hutool.core.util.ArrayUtil;
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import com.baomidou.mybatisplus.toolkit.StringUtils;
+import com.ouyaaa.manage.basis.entity.Shift;
 import com.ouyaaa.upms.core.constant.CommConstant;
 import com.ouyaaa.common.upms.dto.UserInfo;
 import com.ouyaaa.common.upms.entity.SysMenu;
 import com.ouyaaa.common.upms.entity.SysRole;
 import com.ouyaaa.common.upms.entity.SysUser;
 import com.ouyaaa.upms.mapper.SysUserMapper;
-import com.ouyaaa.upms.service.SysMenuService;
-import com.ouyaaa.upms.service.SysRoleService;
-import com.ouyaaa.upms.service.SysUserService;
+import com.ouyaaa.upms.service.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.io.Serializable;
 import java.util.*;
@@ -133,5 +133,35 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper,SysUser> imple
     @CacheEvict(value = "user_details", key = "#username")
     public boolean updateById(SysUser entity) {
         return super.updateById(entity);
+    }
+
+
+
+    @Autowired
+    RemoteShiftService remoteShiftService;
+
+    @Transactional(rollbackFor = Exception.class)
+    public void insertUserAddShiftAddBrand(SysUser sysUser){
+
+
+        Boolean userOk =  insert( sysUser );
+        if(!userOk){
+            try {
+                throw new Exception("用户插入失败");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        Shift shift = new Shift();
+        shift.setShiftCode( "abcd" );
+        shift.setShiftName( "nnnn" );
+        Boolean shiftOk = remoteShiftService.insertShiftInfo( shift );
+        if (!shiftOk){
+            try {
+                throw new Exception("班次插入失败");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
 }
