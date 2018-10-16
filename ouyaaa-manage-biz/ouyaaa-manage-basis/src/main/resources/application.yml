@@ -101,3 +101,20 @@ security:
 #      jwt:
 #        key-uri: http://127.0.0.1:9900/oauth/token_key
       token-info-uri: http://localhost:9900/oauth/check_token
+
+# swagger相关配置,覆盖全局配置
+swagger:
+  title: OUYAAA
+  description: API文档
+  authorization:
+    authorization-scope-list:
+      - scope: 'server'
+        description: 'server all'
+      - scope: 'read'
+        description: 'read all'
+      - scope: 'write'
+        description: 'access all'
+  contact:
+    name: zachary
+    url: www.ouyaaa.com
+    email: zhang6269@163.com

@@ -19,6 +19,9 @@
         <option value="$PROJECT_DIR$/ouyaaa-manage-biz/ouyaaa-manage-produce/pom.xml" />
         <option value="$PROJECT_DIR$/ouyaaa-manage-biz/ouyaaa-manage-basis/pom.xml" />
         <option value="$PROJECT_DIR$/ouyaaa-common/ouyaaa-common-transaction/pom.xml" />
+        <option value="$PROJECT_DIR$/ouyaaa-common/ouyaaa-common-core/pom.xml" />
+        <option value="$PROJECT_DIR$/ouyaaa-common/ouyaaa-common-log/pom.xml" />
+        <option value="$PROJECT_DIR$/ouyaaa-common/ouyaaa-common-swagger/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

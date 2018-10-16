@@ -4,17 +4,17 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.ouyaaa</groupId>
-	<artifactId>ouyaaa-manage-basis</artifactId>
+	<artifactId>ouyaaa-common-log</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>ouyaaa-manage-basis</name>
+	<name>ouyaaa-common-log</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
-		<groupId>com.ouyaaa</groupId>
-		<artifactId>ouyaaa-manage-biz</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.0.5.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
@@ -22,44 +22,55 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<java.version>1.8</java.version>
-		<lombok.version>1.18.2</lombok.version>
-		<hutool.version>4.1.9</hutool.version>
-		<druid.version>1.1.10</druid.version>
-		<mybatis-plus-boot-starter.version>2.3</mybatis-plus-boot-starter.version>
-		<HikariCP.version>3.2.0</HikariCP.version>
 	</properties>
 
 	<dependencies>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		<!--bus 里面包含了rabbitMQ引用-->
 		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-bus-amqp</artifactId>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>cn.hutool</groupId>
+			<artifactId>hutool-all</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>cn.hutool</groupId>
+			<artifactId>hutool-all</artifactId>
+			<version>RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>com.ouyaaa</groupId>
+			<artifactId>ouyaaa-common-core</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.ouyaaa</groupId>
 			<artifactId>ouyaaa-common-upms</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		<!--redis 依赖-->
 		<dependency>
-			<groupId>com.ouyaaa</groupId>
-			<artifactId>ouyaaa-common-transaction</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>com.ouyaaa</groupId>
-			<artifactId>ouyaaa-common-log</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>com.ouyaaa</groupId>
-			<artifactId>ouyaaa-spring-boot-starter</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
 		</dependency>
 	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+
 </project>

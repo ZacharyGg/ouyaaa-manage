@@ -10,6 +10,9 @@
         <module name="ouyaaa-auth" />
         <module name="ouyaaa-codegen" />
         <module name="ouyaaa-commnon-log" />
+        <module name="ouyaaa-common-core" />
+        <module name="ouyaaa-common-log" />
+        <module name="ouyaaa-common-swagger" />
         <module name="ouyaaa-common-transaction" />
         <module name="ouyaaa-common-upms" />
         <module name="ouyaaa-config" />
@@ -20,6 +23,7 @@
         <module name="ouyaaa-manage-produce" />
         <module name="ouyaaa-manage-quality" />
         <module name="ouyaaa-server" />
+        <module name="ouyaaa-spring-boot-starter" />
         <module name="ouyaaa-upms" />
       </profile>
     </annotationProcessing>
@@ -31,7 +35,9 @@
       <module name="ouyaaa-codegeneration" target="1.7" />
       <module name="ouyaaa-commnon-log" target="1.8" />
       <module name="ouyaaa-common" target="1.8" />
+      <module name="ouyaaa-common-core" target="1.8" />
       <module name="ouyaaa-common-log" target="1.8" />
+      <module name="ouyaaa-common-swagger" target="1.8" />
       <module name="ouyaaa-common-transaction" target="1.8" />
       <module name="ouyaaa-common-upms" target="1.7" />
       <module name="ouyaaa-config" target="1.8" />
@@ -43,6 +49,7 @@
       <module name="ouyaaa-manage-produce" target="1.8" />
       <module name="ouyaaa-manage-quality" target="1.8" />
       <module name="ouyaaa-server" target="1.8" />
+      <module name="ouyaaa-spring-boot-starter" target="1.8" />
       <module name="ouyaaa-upms" target="1.8" />
     </bytecodeTargetLevel>
   </component>

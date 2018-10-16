@@ -44,5 +44,6 @@
 	<modules>
 		<module>ouyaaa-commnon-log</module>
 		<module>ouyaaa-common-upms</module>
-	</modules>
+        <module>ouyaaa-spring-boot-starter</module>
+    </modules>
 </project>

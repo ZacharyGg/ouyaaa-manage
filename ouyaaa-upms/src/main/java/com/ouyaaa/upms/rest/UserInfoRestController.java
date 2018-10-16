@@ -12,6 +12,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
@@ -66,6 +67,7 @@ public class UserInfoRestController {
      * @return
      */
     @DeleteMapping("/{id}")
+    @PreAuthorize( "@pms" )
     public Boolean userDel(@PathVariable Integer id){
         return sysUserService.deleteById(id);
     }
