@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/ouyaaa-common/ouyaaa-common.iml" filepath="$PROJECT_DIR$/ouyaaa-common/ouyaaa-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/ouyaaa-common/ouyaaa-common-core/ouyaaa-common-core.iml" filepath="$PROJECT_DIR$/ouyaaa-common/ouyaaa-common-core/ouyaaa-common-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/ouyaaa-common/ouyaaa-common-log/ouyaaa-common-log.iml" filepath="$PROJECT_DIR$/ouyaaa-common/ouyaaa-common-log/ouyaaa-common-log.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ouyaaa-common/ouyaaa-common-security/ouyaaa-common-security.iml" filepath="$PROJECT_DIR$/ouyaaa-common/ouyaaa-common-security/ouyaaa-common-security.iml" />
       <module fileurl="file://$PROJECT_DIR$/ouyaaa-common/ouyaaa-common-swagger/ouyaaa-common-swagger.iml" filepath="$PROJECT_DIR$/ouyaaa-common/ouyaaa-common-swagger/ouyaaa-common-swagger.iml" />
       <module fileurl="file://$PROJECT_DIR$/ouyaaa-common/ouyaaa-common-transaction/ouyaaa-common-transaction.iml" filepath="$PROJECT_DIR$/ouyaaa-common/ouyaaa-common-transaction/ouyaaa-common-transaction.iml" />
       <module fileurl="file://$PROJECT_DIR$/ouyaaa-common/ouyaaa-common-upms/ouyaaa-common-upms.iml" filepath="$PROJECT_DIR$/ouyaaa-common/ouyaaa-common-upms/ouyaaa-common-upms.iml" />

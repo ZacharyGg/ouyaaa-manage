@@ -7,7 +7,9 @@ import com.ouyaaa.manage.basis.service.ShiftService;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 /**
  * <p>
@@ -35,6 +37,19 @@ public class ShiftController {
     @PostMapping("/shift")
     public Boolean insertShiftInfo(@RequestBody Shift shift){
        return shiftService.insert( shift );
+    }
+
+
+    /**
+     * 通过Feign远程传输文件
+     * @param file
+     * @return
+     */
+    @PostMapping(value = "/shift/post",produces = {MediaType.APPLICATION_JSON_UTF8_VALUE},
+            consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    public String postString(@RequestPart("file") MultipartFile file){
+        System.out.println(file.getOriginalFilename());
+        return null;
     }
 
 }

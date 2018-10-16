@@ -67,7 +67,7 @@ public class UserInfoRestController {
      * @return
      */
     @DeleteMapping("/{id}")
-    @PreAuthorize( "@pms" )
+    @PreAuthorize( "@pms.hasPermission('sys_user_del')" )
     public Boolean userDel(@PathVariable Integer id){
         return sysUserService.deleteById(id);
     }

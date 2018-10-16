@@ -12,6 +12,7 @@
         <module name="ouyaaa-commnon-log" />
         <module name="ouyaaa-common-core" />
         <module name="ouyaaa-common-log" />
+        <module name="ouyaaa-common-security" />
         <module name="ouyaaa-common-swagger" />
         <module name="ouyaaa-common-transaction" />
         <module name="ouyaaa-common-upms" />
@@ -37,6 +38,7 @@
       <module name="ouyaaa-common" target="1.8" />
       <module name="ouyaaa-common-core" target="1.8" />
       <module name="ouyaaa-common-log" target="1.8" />
+      <module name="ouyaaa-common-security" target="1.8" />
       <module name="ouyaaa-common-swagger" target="1.8" />
       <module name="ouyaaa-common-transaction" target="1.8" />
       <module name="ouyaaa-common-upms" target="1.7" />

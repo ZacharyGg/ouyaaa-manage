@@ -22,6 +22,7 @@
         <option value="$PROJECT_DIR$/ouyaaa-common/ouyaaa-common-core/pom.xml" />
         <option value="$PROJECT_DIR$/ouyaaa-common/ouyaaa-common-log/pom.xml" />
         <option value="$PROJECT_DIR$/ouyaaa-common/ouyaaa-common-swagger/pom.xml" />
+        <option value="$PROJECT_DIR$/ouyaaa-common/ouyaaa-common-security/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

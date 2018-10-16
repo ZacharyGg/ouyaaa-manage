@@ -42,8 +42,9 @@
 		</dependency>
 	</dependencies>
 	<modules>
-		<module>ouyaaa-commnon-log</module>
+		<module>ouyaaa-common-log</module>
 		<module>ouyaaa-common-upms</module>
         <module>ouyaaa-spring-boot-starter</module>
+		<module>ouyaaa-common-security</module>
     </modules>
 </project>

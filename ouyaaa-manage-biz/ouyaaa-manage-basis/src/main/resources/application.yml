@@ -48,7 +48,11 @@ spring:
         max-concurrency: 20
         retry:
           enabled: true
-
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 50MB
+      max-request-size: 50MB
 eureka:
   client:
     service-url:

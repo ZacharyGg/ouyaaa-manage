@@ -51,7 +51,7 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper,SysUser> imple
      * @return
      */
     @Override
-    @Cacheable(value = "user_details", key = "#username")
+    //@Cacheable(value = "user_details", key = "#username")
     public UserInfo findUserInfo(String username) {
         SysUser sysUser = new SysUser();
         sysUser.setUserName(username);
